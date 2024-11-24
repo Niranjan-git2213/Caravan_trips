@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caravan - Subscription</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+   
+<!--  Modal   -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginTitle">Login to Your Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="loginE-mail">E-mail</label>
+            <input type="E-mail" class="form-control" id="loginE-mail">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword">
+          </div>
+          <button type="submit" class="btn btn-primary">Login to Account</button>
+          <small class="form-text text-muted">Forgot your password? <a href="#">Click here</a>.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Close Modal  -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+  <a href="index.html" class="navbar-brand">
+    <img src="img/caravan.svg" alt="Caravan">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Open Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="local.html">California</a>
+          <a class="dropdown-item" href="local.html">Paris</a>
+          <a class="dropdown-item" href="local.html">Dublin</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="plans.html">Plans</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-primary ml-md-2" href="enrollment.html">Subscribe</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">PLAN YOUR DREAM TRIP</span>
+        <h1 class="display-4 text-primary">SUBSCRIBE</h1>
+      </div>
+      <div class="row">
+        <form class="col-lg-6" action="">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Full name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputE-mail">E-mail</label>
+              <input type="E-mail" class="form-control" id="inputE-mail" placeholder="Your E-mail">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Access password">
+            </div>
+            <div class="form-group col-12">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Number, street name, and neighborhood.">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Your City">
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option>Select State</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Paraná</option>
+                <option>Ceará</option>
+                <option>Acre</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="inputZip">Zip Code</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="xxxxx-xxx">
+            </div>
+          </div>
+          <div class="bg-light rounded box-shadow p-3 form-group">
+            <h2 class="h6 text-primary">PAYMENT METHOD</h2>
+            <nav class="nav btn-group mb-3" id="paymentMethod" role="tablist">
+              <button type="button" class="btn btn-secondary active btn-sm" id="nav-creditCard-tab" data-toggle="tab" href="#nav-creditCard" role="tab" aria-controls="nav-creditCard" aria-selected="true">Credit Card</button>
+              <button type="button" class="btn btn-secondary btn-sm" id="nav-BankSlip-tab" data-toggle="tab" href="#nav-BankSlip" role="tab" aria-controls="nav-BankSlip" aria-selected="false">Bank Slip</button>
+            </nav>
+            <div class="tab-content" id="paymentMethodContent">
+              <div class="tab-pane fade show active" id="nav-creditCard" role="tabpanel" aria-labelledby="nav-creditCard-tab">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCardName">Card Name</label>
+                    <input type="text" class="form-control" id="inputCardName" placeholder="Name on the card">
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputMonth">Month</label>
+                    <select id="inputMonth" class="form-control">
+                      <option>Expiration Month...</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputYear">Year</label>
+                    <select id="inputYear" class="form-control">
+                      <option>Expiration Year...</option>
+                      <option>2024</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="inputCardNumber" placeholder="5555 5555 5555 5555">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputSecurityCode">Security Code</label>
+                    <input type="text" class="form-control" id="inputSecurityCode" placeholder="XXX">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-BankSlip" role="tabpanel" aria-labelledby="nav-BankSlip-tab">
+                <p class="lead">Click on "Subscribe" and we will send a bank slip to your E-mail.</p>
+              </div>
+            </div>
+          </div>
+           
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              I agree to the <a href="#">Terms and Conditions.</a>
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-lg">Subscribe Plan</button>
+          
+        </form>
+        
+        <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+          <h2 class="h6 text-primary">SELECTED PLAN</h2>
+          <div class="bg-light rounded p-4 box-shadow">
+            <h2>Gold</h2>
+            <ul class="plan-list list-unstyled">
+              <li>→ 30 days of travel</li>
+              <li>→ 3 different destinations</li>
+              <li>→ All paid by the company</li>
+              <li>→ Tickets for parties</li>
+            </ul>
+            <form>
+              <div class="form-group">
+                <select class="form-control bg-light" id="inputCities">
+                  <option>Selection</option>
+                  <option>California</option>
+                  <option>Paris</option>
+                  <option>Dublin</option>
+                </select>
+              </div>
+            </form>
+            <div class="row mt-4">
+              <div class="col">
+                <span class="h4">R$5,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">PAGES</h4>
+            <ul class="list-unstyled">
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="enrollment.html">Subscribe</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h6">LOCATIONS</h4>
+            <ul class="list-unstyled">
+              <li><a href="local.html">California</a></li>
+              <li><a href="local.html">Paris</a></li>
+              <li><a href="local.html">Dublin</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6">CONTACT DETAILS</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>caravan@niranjan.com.br</li>
+              <li>+91 9529742213</li>
+              <li>Monday to Friday from 8am to 6pm</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="h6">SOCIAL MEDIA</h4>
+            <ul class="list-unstyled">
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">Caravan © 2024. Some rights reserved.</p>
+      </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

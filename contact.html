@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caravan - Contact</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+   
+<!--  Modal   -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitle">Login to Your Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginE-mail">E-mail</label>
+                <input type="E-mail" class="form-control" id="loginE-mail">
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword">
+              </div>
+              <button type="submit" class="btn btn-primary">Login to Account</button>
+              <small class="form-text text-muted">Forgot your password? <a href="#">Click here</a>.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- End Modal  -->
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/caravan.svg" alt="Caravan">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Open Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">California</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plans.html">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ml-md-2" href="enrollment.html">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">DO YOU HAVE ANY QUESTIONS?</span>
+        <h1 class="display-4 text-primary">Contact Us</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg mb-5">
+          <form class="bg-light rounded p-4 box-shadow" action="">
+            <div class="form-group">
+              <label for="clientName">Name</label>
+              <input type="text" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <label for="clientE-mail">E-mail</label>
+              <input type="E-mail" class="form-control" id="clientE-mail">
+            </div>
+            <div class="form-group">
+              <label for="clientMessage">Message</label>
+              <textarea id="clientMessage" class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-lg">
+          <h2 class="h6">OUR ADDRESS</h2>
+          <a href="#"><img class="img-fluid box-shadow rounded mb-4" src="img/map.png" alt="Company Address"></a>
+          
+          <h2 class="h6">CONTACT DETAILS</h2>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@niranjan.com</li>
+            <li>+91 9529742213</li>
+            <li>Monday to Friday from 8am to 6pm</li>
+          </ul>
+          
+          <h2 class="h6">SOCIAL MEDIA</h2>
+          <ul class="list-unstyled" style="max-width: 260px">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#">Twitter</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">PAGES</h4>
+            <ul class="list-unstyled">
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="enrollment.html">Subscribe</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h6">LOCATIONS</h4>
+            <ul class="list-unstyled">
+              <li><a href="local.html">California</a></li>
+              <li><a href="local.html">Paris</a></li>
+              <li><a href="local.html">Dublin</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6">CONTACT DETAILS</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>caravan@niranjan.com.br</li>
+              <li>+91 9529742213</li>
+              <li>Monday to Friday from 8am to 6pm</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="h6">SOCIAL MEDIA</h4>
+            <ul class="list-unstyled">
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">Caravan © 2024. Some rights reserved.</p>
+      </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
